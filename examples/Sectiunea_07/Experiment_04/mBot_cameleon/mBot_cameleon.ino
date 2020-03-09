@@ -5,9 +5,8 @@
  * - aprindem LED-urile rosii si generam o nota cu buzzerul daca e un obstacol in fata
  */
 
-//includere biblioteci
+//includere biblioteca
 #include "MeMCore.h"
-#include "Adafruit_NeoPixel.h"
 //definire motoare (stanga si dreapta)
 //definire senzor de distanta
 //definire LED-uri RGB

@@ -2,9 +2,8 @@
 Transformam mBot-ul intr-un animal de companie care ne urmareste mana atunci cand o detecteaza, in timp ce canta.
 */
 
-//includere biblioteci
-#include "MeMCore.h" 
-#include "Adafruit_NeoPixel.h"
+//includere biblioteca
+#include "MeMCore.h"
 
 //declarare LED-uri RGB
 //declarare senzor ultrasonic

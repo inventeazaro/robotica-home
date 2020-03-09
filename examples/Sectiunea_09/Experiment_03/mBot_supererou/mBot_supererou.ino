@@ -8,7 +8,6 @@
  
 //includere biblioteca
 #include "MeMCore.h"
-#include "Adafruit_NeoPixel.h"
 //definire receptor infrarosu (IR)
 MeIR receptor; 
 //definire variabila valoare tasta telecomanda

@@ -3,9 +3,8 @@ Vom realiza un mBot de politie care porneste sirena atunci cand detecteaza infra
 Vom folosi LED-urile RGB si buzzer-ul pentru sirena si senzorul ultrasonic pentru a detecta infractorii. 
 */
 
-//includere biblioteci
+//includere biblioteca
 #include "MeMCore.h"
-#include "Adafruit_NeoPixel.h"
 
 //declarare LED-uri
 //declarare buzzer

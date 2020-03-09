@@ -2,9 +2,10 @@
 Generarea unei culori aleatorii a LED-urilor RGB la fiecare apasare de buton.
 */
 
-//includere biblioteci
-#include "Adafruit_NeoPixel.h"
-//declarare LED-uri RBG (2 - numarul de LED-uri, 13 - pinul pe care se afla)
+//includere biblioteca
+#include "MeMCore.h"
+
+//declarare LED-uri RBG
 
 //declarare variabile pentru cele trei culori
 

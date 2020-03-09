@@ -2,9 +2,8 @@
  * Vom transforma mBotul intr-un robot de sumo cu semnalizare prin leduri la intalnirea unui adversar
  */
 
-//includere biblioteci 
+//includere biblioteca 
 #include "MeMCore.h"
-#include "Adafruit_NeoPixel.h"
 
 //declarare motoare
 
