@@ -3,7 +3,7 @@ Vom aprinde LED-urile RGB in functie de mesajele scrise in consola seriala
 */
 
 //includere biblioteca
-#include "Adafruit_NeoPixel.h"
+#include "MeMCore.h"
 
 //declarare LEDuri RBG 
 

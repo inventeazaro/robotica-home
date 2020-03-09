@@ -3,7 +3,7 @@ Vom realiza un semafor cu ajutorul LED-urilor RGB de pe mBot
 */
 
 //includere biblioteca
-#include "Adafruit_NeoPixel.h"
+#include "MeMCore.h"
 
 //declarare LED-uri RGB
 
