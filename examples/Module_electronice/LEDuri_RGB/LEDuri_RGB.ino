@@ -2,19 +2,21 @@
 Pe MBot exista doua LEDuri RGB, pe pinul 13
 */
 
-#include "Adafruit_NeoPixel.h"
+#include <MeMCore.h>
 
-//declarare LEDuri RBG (2 - numarul de LEDuri, 13 - pinul pe care se afla)
-Adafruit_NeoPixel LEDs = Adafruit_NeoPixel(2, 13, NEO_GRB + NEO_KHZ800);
+//declarare LEDuri RBG ()
+MeRGBLed rgb(0,2);
 
 void setup() {
   //acest cod este executat o singura data
-  LEDs.begin(); //initializare LEDuri RGB
+  rgb.setpin(13);
+  rgb.setColor(0,0,0); // setam ledurile pe pozitia inchis ca sa anulam culorile anterioare
+  rgb.show();
 }
 
 void loop() {
   //acest cod este executat si repetat la infinit
-  LEDs.setPixelColor(0, LEDs.Color(255, 0, 0)); //setare culoare LED1 (rosu)
-  LEDs.setPixelColor(1, LEDs.Color(255, 0, 0)); //setare culoare LED2 (rosu)
-  LEDs.show(); 
+  rgb.setColor(1, 255,0,0); // acest cod controleaza primul led
+  rgb.setColor(2, 0,0,255); // acest cod controleaza al doilea led
+  rgb.show(); // acest cod afiseaza culorile pe leduri
 }
