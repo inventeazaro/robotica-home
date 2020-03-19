@@ -5,7 +5,7 @@ Vom aprinde LED-urile RGB de pe mBot
 //includere biblioteca
 #include "MeMCore.h"
 
-//declarare LED-uri RBG (2 - numarul de LED-uri, 13 - pinul pe care se afla)
+//declarare LED-uri RBG (2 - numarul de LED-uri)
 
 void setup() {
   //acest cod este executat o singura data

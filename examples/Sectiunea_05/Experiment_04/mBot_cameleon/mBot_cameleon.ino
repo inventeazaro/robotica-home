@@ -5,7 +5,8 @@ Vom aprinde LED-urile RGB in functie de mesajele scrise in consola seriala
 //includere biblioteca
 #include "MeMCore.h"
 
-//declarare LEDuri RBG 
+//declarare LEDuri RBG
+
 
 void setup() {
   //acest cod este executat o singura data
@@ -23,8 +24,11 @@ void loop() {
       //setare culoare LED1 & LED2 (verde)
       //pornire LED-uri
     } else if (culoare == "albastru"){
-      //setare culoare LED1 & LED2 (albastru)
-      //pornire LED-uri 
+      //setare culoare LED1 & LED2 (verde)
+      //pornire LED-uri
+    }else {
+      //setare culoare LED1 & LED2 (nicio culoare)
+      //oprire LED-uri
+      }
     }    
   }
-}
