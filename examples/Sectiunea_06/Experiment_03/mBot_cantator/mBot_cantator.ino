@@ -22,4 +22,5 @@ void loop()
   int sunet = map(distanta, 0, 400, 800, 5000); //transformam valoarea primita de la senzorul ultrasonic intr-o nota muzicala
   //afisare valoare buzzer
   buzzer.tone(sunet, 100);
+  //asteapta 0.1 secunde
 }
