@@ -1,9 +1,9 @@
 /*
- * Transformam mBot-ul in paznic de noapte. 
- * Folosind senzorul de lumina putem detecta cand “se face noapte”, 
- * moment in care robotul trebuie sa patruleze in jurul cladirii pazite 
- * (sa inconjoare cutia de patru ori, dupa care se face iar zi).
- */
+ Transformam mBot-ul in paznic de noapte. 
+ Folosind senzorul de lumina putem detecta cand "se face noapte", 
+ moment in care robotul trebuie sa patruleze in jurul cladirii pazite 
+ (sa inconjoare cutia de patru ori, dupa care se face iar zi).
+*/
 
 //includere biblioteca
 #include "MeMCore.h"

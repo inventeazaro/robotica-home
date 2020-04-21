@@ -1,7 +1,7 @@
 /*
- * Mini Curiosity - mBot care isi canta "Happy Birthday" la fiecare 30 de secunde.
- * Cand nu canta se roteste in cerc (exploreaza). 
- */
+ Mini Curiosity - mBot care isi canta "Happy Birthday" la fiecare 30 de secunde.
+ Cand nu canta se roteste in cerc (exploreaza). 
+*/
  
 //includere biblioteca
 #include "MeMCore.h"
@@ -102,7 +102,7 @@
 MeBuzzer buzzer;
 
 //notele muzicale din care e compusa melodia
-int melody[] = {
+int melodie[] = {
   NOTE_G4,//5
   NOTE_G4,//5
   NOTE_A4,//6
@@ -131,11 +131,11 @@ int melody[] = {
   NOTE_C5,//1.
   NOTE_D5,//2.
   NOTE_C5,//1.
-  0,
+  0
 };
 
 //duratele notelor muzicale
-int noteDurations[] = {
+int durateNote[] = {
   8, 8, 4, 4, 4, 4,
   4,
   8, 8, 4, 4, 4, 4,
@@ -143,7 +143,7 @@ int noteDurations[] = {
   8, 8, 4, 4, 4, 4, 2,
   8,
   8, 8, 4, 4, 4, 2,
-  4,
+  4
 };
 
 void setup() {
@@ -152,15 +152,15 @@ void setup() {
 void loop() {
   //rotire timp de zece secunde
   //oprire motoare
-  play();
+  canta();
 }
 
-void play() {
-  for (int thisNote = 0; thisNote < 29; thisNote++) {
-    int noteDuration = 1000 / noteDurations[thisNote];
-    buzzer.tone(melody[thisNote], noteDuration);
-    int pauseBetweenNotes = noteDuration * 1.30;
-    delay(pauseBetweenNotes);
+void canta() {
+  for (int nota = 0; nota < 29; nota++) {
+    int durataNota = 1000 / durateNote[nota];
+    buzzer.tone(melodie[nota], durataNota);
+    int pauzaIntreNote = durataNota * 1.30;
+    delay(pauzaIntreNote);
     buzzer.noTone();
   }
 }

@@ -1,9 +1,9 @@
 /*
- * Vom transforma mBot-ul intr-un robot object avoider cu semnalizare vizuala si sonora la intalnirea unui obstacol:
- * - aprindem LED-urile verzi daca nu exista obstacole
- * - aprindem LED-urile galbene daca se apropie de un obstacol (distanta < 30)
- * - aprindem LED-urile rosii si generam o nota cu buzzerul daca e un obstacol in fata
- */
+ Vom transforma mBot-ul intr-un robot object avoider cu semnalizare vizuala si sonora la intalnirea unui obstacol:
+ - aprindem LED-urile verzi daca nu exista obstacole
+ - aprindem LED-urile galbene daca se apropie de un obstacol (distanta < 30)
+ - aprindem LED-urile rosii si generam o nota cu buzzerul daca e un obstacol in fata
+*/
 
 //includere biblioteca
 #include "MeMCore.h"
@@ -26,19 +26,16 @@ void setup()
 void loop()
 {
   //acest cod este executat si repetat la infinit
-
   //citire valoare senzor de distanta in variabila distanta
-  if (distanta < 20 && distanta > 10)
+  if (distanta < 20 && distanta > 10) {
     //aprinde LED-uri galbene
-    if (distanta < 10) {
-      //aprinde LED-uri rosii
-      //pornire buzzer
-      //miscare motoare in spate
-      //asteapta jumatate de secunda
-      //miscare motoare la stanga (sau la dreapta)
-      //asteapta jumatate de secunda
-    } else {
-      //miscare motoare in fata
-      //aprinde LED-uri verzi
-    }
+  } else if (distanta < 10) {
+    //aprinde LED-uri rosii
+    //pornire buzzer
+    //miscare motoare in spate timp de jumatate de secunda
+    //miscare motoare la stanga (sau la dreapta) timp de jumatate de secunda
+  } else {
+    //miscare motoare in fata
+    //aprinde LED-uri verzi
+  }
 }

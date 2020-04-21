@@ -1,6 +1,6 @@
 /*
- * Vom transforma mBot-ul intr-un robot explorator, care se plimba prin jur si evita obstacolele pe care le intalneste.
- */
+ Vom transforma mBot-ul intr-un robot explorator, care se plimba prin jur si evita obstacolele pe care le intalneste.
+*/
 
 //includere biblioteca 
 #include "MeMCore.h"
