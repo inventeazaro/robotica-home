@@ -8,8 +8,6 @@
 //definire senzor de distanta
 
 //declarare variabila distanta
-int distanta;
-
 //declarare variabila viteza
 
 void setup()
