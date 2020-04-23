@@ -5,7 +5,9 @@
  
 //includere biblioteca
 #include "MeMCore.h"
+
 //declarare motoare
+//declarare buzzer
 
 //definire note
 #define NOTE_B0  31
@@ -97,9 +99,6 @@
 #define NOTE_CS8 4435
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
-
-//definire buzzer
-MeBuzzer buzzer;
 
 //notele muzicale din care e compusa melodia
 int melodie[] = {
