@@ -1,10 +1,9 @@
 /*
- *Vom aprinde LED-ul de stare cat timp butonul este apasat.
- */
- 
+  Vom aprinde LED-ul de stare cat timp butonul este apasat.
+*/
+
 void setup() {
   //acest cod este executat o singura data
-  //initializare consola seriala
   //initializare LED
   //initializare buton
 }

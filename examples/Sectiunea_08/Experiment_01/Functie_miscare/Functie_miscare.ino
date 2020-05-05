@@ -7,10 +7,10 @@ Miscarea mBot-ului prin intermediul unei functii.
 
 //definire motoare (stanga si dreapta)
 
-void miscare(int VitezaStanga, int VitezaDreapta, int durata)
+void miscare(int viteza_stanga, int viteza_dreapta, int durata)
 {
-  //miscare motor stanga cu viteza VitezaStanga
-  //miscare motor dreapta cu viteza VitezaDreapta
+  //miscare motor stanga cu viteza viteza_stanga
+  //miscare motor dreapta cu viteza viteza_dreapta
   //asteapta durata
 }
 

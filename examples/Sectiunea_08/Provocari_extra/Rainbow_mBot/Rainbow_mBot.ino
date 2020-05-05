@@ -5,9 +5,11 @@ Generarea unei culori aleatorii a LED-urilor RGB la fiecare apasare de buton.
 //includere biblioteca
 #include "MeMCore.h"
 
-//declarare LED-uri RBG
+//declarare LED-uri RGB
 
-//declarare variabile pentru cele trei culori
+//declarare buzzer
+
+//declarare variabile pentru cele trei culori (RGB) si pentru frecventa buzzer
 
 void setup() {
   //acest cod este executat o singura data
@@ -18,11 +20,12 @@ void setup() {
 void loop() {
   // acest cod este executat la infinit
   while (analogRead(7) < 10) {
-    //cand butonul este apasat LED-urile isi schimba culoarea (culoare random)
-    //declarare valori random pentru cele trei culori
-    //setare culoare LED1 (random)
-    //setare culoare LED2 (random)
+    //citire valori aleatoare pentru cele trei culori
+    //setare culoare LED1
+    //setare culoare LED2
     //aprindere LED-uri
-    delay(200);
+    //citire frecventa aleatoare
+    //pornire buzzer
+    //asteapta 200 ms
   }
 }
