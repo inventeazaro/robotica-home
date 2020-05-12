@@ -2,25 +2,24 @@
   Afisam in consola seriala ce taste de pe telecomanda sunt apasate.
 */
 
-//includere biblioteca 
-#include “MeMCore.h”
-MeIR receptor; //definire receptor infrarosu (IR)
-uint32_t value = 0x00; //declarare variabila tasta apasata
+//includere biblioteci
+#include "MeMCore.h"
+
+//definire receptor infrarosu (IR)
 
 void setup() {
   //acest cod este executat o singura data
   //initializare receptor IR
   //initializare consola seriala
- 
 }
 
 void loop() {
   //acest cod este executat si repetat la infinit
-  if (receptor.decode()) {
-    //decodarea semnalului transmis de telecomanda 
-    value = receptor.value >> 16 & 0xFF;   
-    //afisam valoarea hexazecimala a tastei apasate  
-    Serial.print("0x"); 
-    Serial.println(value, HEX);
+  //incercam coduri de taste de la 1 la 100 pentru a vedea ce buton este apasat
+  for (int i = 1; i <= 100; i++) {
+    if (receptor.keyPressed(i)) {
+      //printam pe seriala codul apasat
+    }
   }
+  receptor.loop(); //functie necesara updatarii receptorului
 }

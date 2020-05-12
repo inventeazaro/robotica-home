@@ -8,19 +8,16 @@
 //declarare motoare
 //declarare senzor linie
 //declarare variabile
-int stare = 0;
-int distanta;
 
 //functie pentru miscarea motoarelor robotului
-void miscare(int VitezaStanga, int VitezaDreapta)
+void miscare(int viteza_stanga, int viteza_dreapta)
 {
-  MotorStanga.run(-VitezaStanga);
-  MotorDreapta.run(VitezaDreapta);
+  MotorStanga.run(-viteza_stanga);
+  MotorDreapta.run(viteza_dreapta);
 }
 
 void lineFollower() {
   //citire valoare senzor linie
-  int linie = SenzorLinie.readSensors();
   switch (linie)
   {
     case S1_IN_S2_IN:
@@ -51,8 +48,7 @@ void lineFollower() {
 }
 
 void setup() {
-  Serial.begin(9600);
-  Serial.println("Start");
+
 }
 
 void loop() {

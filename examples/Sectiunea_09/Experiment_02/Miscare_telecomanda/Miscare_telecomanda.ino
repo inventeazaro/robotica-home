@@ -1,31 +1,49 @@
 /*
- * Vom misca mBot-ul prin intermediul telecomenzii.
- */
+   Vom misca mBot-ul prin intermediul telecomenzii.
+*/
 
-//includere biblioteca 
-#include "MeMCore.h"
+#include "MeMCore.h" //includere biblioteca
+
+//declarare motoare
 //definire receptor infrarosu (IR)
-MeIR receptor;
-//declarare variabila tasta apasata (value)
-uint32_t value = 0x00;
-//functie pentru miscarea motoarelor robotului
+//declarare variabila tasta
+
+void miscare(int viteza_stanga, int viteza_dreapta) //functie pentru miscarea motoarelor robotului
+{
+  MotorStanga.run(-viteza_stanga);
+  MotorDreapta.run(viteza_dreapta);
+}
 
 void setup() {
-  //initializare receptor IR,  consola seriala
+  //initializare receptor IR
 }
 
 void loop() {
-  //acest cod este executat si repetat la infinit
-  if (receptor.decode()){
-    //decodarea semnalului transmis de telecomanda   
-  } else value = 0x00;
+  for (int i = 0; i <= 100; i++) {
+    if (receptor.keyPressed(i)) {
+      //citirea tastei transmisa de telecomanda
+    } else {
+      //initializare variabila tasta cu valoarea zero
+    }
+  }
   switch (value) {
-    //afisam pe consola seriala ce tasta a fost apasata si miscam mBot-ul
-    case 0x40: //miscare in fata timp de 0.1 secunde      break;
-    case 0x7:  //miscare in stanga timp de 0.1 secunde    break;
-    case 0x9:  //miscare in dreapta timp de 0.1 secunde   break;
-    case 0x19: //miscare in spate timp de 0.1 secunde     break;
-    case 0x00: //oprire                                   break;
+    //afisam pe consola seriala ce tasta a fost apasata si miscam mBotul
+    case 64:
+      //miscare in fata timp de 200 ms
+      break;
+    case 7:
+      //viraj stanga timp de 200 ms
+      break;
+    case 9:
+      //viraj drapta timp de 200 ms
+      break;
+    case 25:
+      //mers in spatetimp de 200 ms
+      break;
+    case 0:
+      //oprire motoare
+      break;
     default: break;
-  }  
+  }
+  receptor.loop(); //functie necesara updatarii receptorului
 }
