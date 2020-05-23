@@ -12,8 +12,7 @@
 //functie pentru miscarea motoarelor robotului
 void miscare(int viteza_stanga, int viteza_dreapta)
 {
-  MotorStanga.run(-viteza_stanga);
-  MotorDreapta.run(viteza_dreapta);
+  //pornire motoare
 }
 
 void lineFollower() {

@@ -1,7 +1,7 @@
 /*
- Vom transforma mBot-ul intr-un robot object avoider cu semnalizare vizuala si sonora la intalnirea unui obstacol:
+ Vom transforma mBot-ul intr-un cameleon care isi schimba culoarea cand detecteaza obiecte:
  - aprindem LED-urile verzi daca nu exista obstacole
- - aprindem LED-urile galbene daca se apropie de un obstacol (distanta < 30)
+ - aprindem LED-urile galbene daca se apropie de un obstacol (distanta < 20)
  - aprindem LED-urile rosii si generam o nota cu buzzerul daca e un obstacol in fata
 */
 
@@ -14,7 +14,6 @@
 //declarare buzzer
 
 //declarare variabila distanta
-int distanta;
 
 //declarare variabila viteza
 

@@ -3,7 +3,7 @@
    - Sinister strike - dash forward al robotului de 3 secunde
    - Cloak of shadows - o rotire pe loc a robotului care induce in eroare inamicul, deoarece este mai greu de prins
    - Deadly charge - aprindem ledurile RGB intermitent si folosim un sunet similar cu piu piu piu
-   - Ultimata - un sunet puternic urmat de rotirea robotului pe loc + luminarea ledurilor rgb intermitent + sunete de piu piu piu
+   - Ultimate - un sunet puternic urmat de rotirea robotului pe loc + luminarea ledurilor rgb intermitent + sunete de piu piu piu
 */
 
 //includere biblioteca
@@ -23,9 +23,8 @@ void lumina (int r, int g, int b) {
 //functie pentru miscarea motoarelor robotului
 void miscare(int viteza_stanga, int viteza_dreapta, int durata)
 {
-  MotorStanga.run(-viteza_stanga);
-  MotorDreapta.run(viteza_dreapta);
-  delay(durata);
+  //pornire motoare 
+  //asteapta 
 }
 
 //mers rapid in fata timp de 2 secunde
@@ -52,11 +51,11 @@ void Deadly_charge() {
 //sunet puternic urmat de rotirea robotului pe loc + aprinderea LED-urilor RGB intermitent + sunete de shooter
 void Ultimate() {
   //pornire buzzer timp de 1s
-  //miscare in cerc
+  //miscare in cerc 200ms
   for (int i = 1; i <= 3; i++) {
-    //aprindere LEDuri (albastru)
-    //aprindere LEDuri (verde)
-    //aprindere LEDuri (rosu)
+    //aprindere LED-uri (albastru)
+    //aprindere LED-uri (verde)
+    //aprindere LED-uri (rosu)
   }
   //oprire LED-uri
   //oprire motoare
@@ -73,7 +72,6 @@ void loop() {
   for (int i = 0; i <= 100; i++) {
     if (receptor.keyPressed(i)) {
       tasta = i; //citirea tastei transmisa de telecomanda
-    } else tasta = 0;
   }
   switch (tasta) {
     //in functie de ce tasta a fost apasata, miscam robotul sau apelam powerup-ul corespunzator
@@ -98,4 +96,5 @@ void loop() {
     default: break;
   }
   receptor.loop(); //functie necesara updatarii receptorului
+  }
 }

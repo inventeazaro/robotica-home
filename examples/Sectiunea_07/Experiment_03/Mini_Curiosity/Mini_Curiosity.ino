@@ -100,40 +100,19 @@
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
 
-//notele muzicale din care e compusa melodia
+//notele muzicale din care este compusa melodia
 int melodie[] = {
-  NOTE_G4,//5
-  NOTE_G4,//5
-  NOTE_A4,//6
-  NOTE_G4,//5
-  NOTE_C5,//1.
-  NOTE_B4,//7
+  NOTE_G4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_C5, NOTE_B4,
   0,
-  NOTE_G4,//5
-  NOTE_G4,//5
-  NOTE_A4,//6
-  NOTE_G4,//5
-  NOTE_D5,//2.
-  NOTE_C5,//1.
+  NOTE_G4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_D5, NOTE_C5,
+  0, 
+  NOTE_G4, NOTE_G4, NOTE_G5, NOTE_E5, NOTE_C5, NOTE_B4, NOTE_A4,
   0,
-  NOTE_G4,//5
-  NOTE_G4,//5
-  NOTE_G5,//5.
-  NOTE_E5,//3.
-  NOTE_C5,//1.
-  NOTE_B4,//7
-  NOTE_A4,//6
-  0,
-  NOTE_F5,//4.
-  NOTE_F5,//4.
-  NOTE_E5,//3.
-  NOTE_C5,//1.
-  NOTE_D5,//2.
-  NOTE_C5,//1.
+  NOTE_F5, NOTE_F5, NOTE_E5, NOTE_C5, NOTE_D5, NOTE_C5,
   0
 };
 
-//duratele notelor muzicale
+//duratele notelor muzicale (2 = doime / 2 timpi 4 = nota intreaga / 4 timpi, 8 = nota dublu intreaga / 8 timpi )
 int durateNote[] = {
   8, 8, 4, 4, 4, 4,
   4,
@@ -149,17 +128,12 @@ void setup() {
 }
 
 void loop() {
-  //rotire timp de zece secunde
+  //rotire timp de treizeci de secunde
   //oprire motoare
-  canta();
-}
-
-void canta() {
   for (int nota = 0; nota < 29; nota++) {
     int durataNota = 1000 / durateNote[nota];
     buzzer.tone(melodie[nota], durataNota);
     int pauzaIntreNote = durataNota * 1.30;
     delay(pauzaIntreNote);
-    buzzer.noTone();
   }
 }

@@ -10,7 +10,7 @@
 //declarare motoare (stanga si dreapta)
 
 //declarare variabila lumina
-int lumina;
+
 
 void setup() {
   //acest cod este executat o singura data

@@ -1,5 +1,5 @@
 /*
-Generarea unei culori aleatorii a LED-urilor RGB la fiecare apasare de buton.
+Generarea unei culori aleatorii a LED-urilor RGB la fiecare apasare de buton, insotita de un sunet generat tot la intamplare. 
 */
 
 //includere biblioteca
