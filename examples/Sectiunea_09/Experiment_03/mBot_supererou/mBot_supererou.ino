@@ -72,6 +72,7 @@ void loop() {
   for (int i = 0; i <= 100; i++) {
     if (receptor.keyPressed(i)) {
       tasta = i; //citirea tastei transmisa de telecomanda
+    }
   }
   switch (tasta) {
     //in functie de ce tasta a fost apasata, miscam robotul sau apelam powerup-ul corespunzator
