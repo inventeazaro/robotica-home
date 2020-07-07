@@ -16,7 +16,7 @@ void setup() {
 void loop() {
   //acest cod este executat si repetat la infinit
   //incercam coduri de taste de la 1 la 100 pentru a vedea ce buton este apasat
-  for (int i = 1; i <= 100; i++) {
+  for (int i = 0; i <= 100; i++) {
     if (receptor.keyPressed(i)) {
       //printam pe seriala codul apasat
     }

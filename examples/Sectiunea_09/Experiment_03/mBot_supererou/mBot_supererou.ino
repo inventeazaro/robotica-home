@@ -98,4 +98,3 @@ void loop() {
   }
   receptor.loop(); //functie necesara updatarii receptorului
   }
-}

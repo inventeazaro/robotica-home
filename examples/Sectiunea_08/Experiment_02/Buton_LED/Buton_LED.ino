@@ -2,6 +2,8 @@
   Vom aprinde LED-ul de stare cat timp butonul este apasat.
 */
 
+#include "MeMCore.h" //includere biblioteca
+
 void setup() {
   //acest cod este executat o singura data
   //initializare LED

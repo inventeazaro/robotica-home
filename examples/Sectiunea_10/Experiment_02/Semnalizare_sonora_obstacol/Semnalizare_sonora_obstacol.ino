@@ -13,8 +13,7 @@
 //declarare variabile
 
 void miscare(int viteza_stanga, int viteza_dreapta) { //functie pentru miscarea motoarelor
-  MotorStanga.run(-viteza_stanga);
-  MotorDreapta.run(viteza_dreapta);
+  //pornire motoare
 }
 
 void lineFollower() { //functie lineFollower

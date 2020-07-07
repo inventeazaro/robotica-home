@@ -31,9 +31,9 @@ void loop() {
       break;
     case 7:  //viraj stanga timp de 200 ms
       break;
-    case 9:  //viraj drapta timp de 200 ms
+    case 9:  //viraj dreapta timp de 200 ms
       break;
-    case 25: //mers in spatetimp de 200 ms
+    case 25: //mers in spate timp de 200 ms
       break;
     case 0:  //oprire motoare
       break;
